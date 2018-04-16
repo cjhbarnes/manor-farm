@@ -1,0 +1,15 @@
+// ==========================================================================
+// GLOBAL SETTINGS
+// ==========================================================================
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+// Base typographical styles and baseline grid.
+$font-family: Helvetica, sans-serif;
+$global-font-size:    18px !default;
+$global-line-height:  30px !default;
+
+// Standardise some UI treatments.
+$global-radius:       3px !default;
+$global-transition:   0.333333333s !default;
+$global-spacing-unit: 8px;
