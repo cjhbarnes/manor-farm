@@ -1,0 +1,52 @@
+/* ==========================================================================
+   PAGE HEAD
+   ========================================================================== */
+
+.page-foot {
+  margin-top: $global-spacing-unit * 10;
+
+  @include mq($until: md) {
+    text-align: center;
+
+    .footer-contact {
+      margin-top: $global-spacing-unit * 4;
+    }
+  }
+}
+
+
+.page-foot__secondary {
+  color: #CED7B1;
+  padding: $global-spacing-unit;
+
+  .o-layout__item {
+    @include font-size(12px);
+  }
+  
+}
+
+
+.social-list {
+  float: right;
+  list-style: none;
+  margin-bottom: 0;
+
+  @include mq($until: md) {
+    float: none;
+    margin-left: 0;
+  }
+  
+  a {
+    color: #CED7B1;
+    text-decoration: none;
+  }
+
+  li {
+    float: left;
+    padding: 0 $global-spacing-unit;
+
+    @include mq($until: md) {
+      float: none;
+    }
+  }
+}

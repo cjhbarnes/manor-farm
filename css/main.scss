@@ -40,24 +40,17 @@
 
 
 /*
+   COMPONENTS
+   ========================================================================== */
+@import "components/page-head";
+@import "components/navigation";
+@import "components/hero";
+@import "components/band";
+@import "components/card";
+@import "components/page-foot";
+@import "components/form";
+
+/*
    UTILITIES
    ========================================================================== */
 @import "utilities/widths";
-
-html {
-  background: #F5F7F0;
-  color: #424F19;
-}
-
-.placeholder-heading {
-  margin-top: 10rem;
-  text-align: center;
-
-  @include mq($until: md) {
-    margin-top: 5rem;
-  }
-}
-
-p {
-  text-align: center;
-}

@@ -1,0 +1,89 @@
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+
+.hero {
+  color: #fff;
+  display: block;
+  max-height: 480px;
+
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+
+  > .o-wrapper {
+      position: relative; /* [3] */
+      padding-top: 56.25%; /* [4] */
+
+      @media screen and (min-width: 758px) { /* [5] */
+          padding-top: 0; /* [6] */
+          height: $header-max-height - 16px - $header-border-width; /* [7] */
+      }
+
+  }
+
+  .page--home & {
+    background-image: url(/images/masthead.jpg);
+  }
+
+  .page--farm & {
+    background-image: url(/images/masthead-farm.jpg);
+  }
+
+  .page--dairy & {
+    background-image: url(/images/masthead-dairy.jpg);
+  }
+
+  .page--tearooms & {
+    background-image: url(/images/masthead-tearoom.jpg);
+  }
+
+  .page--shop & {
+    background-image: url(/images/masthead-shop.jpg);
+  }
+
+}
+
+.hero__text {
+    margin: 0;
+    font-weight: 300;
+    position: absolute;
+    bottom: 150px;
+    left: auto;
+    @include font-size(36px);
+
+    @include mq($until: small) {
+      @include font-size(24px);
+      bottom: 30px;
+    }
+
+    @include mq($from: small, $until: md) {
+      @include font-size(32px);
+      bottom: 120px;
+    }
+}
+
+
+.energy-img,
+.organic-img {
+  margin: 0 auto;
+  display: block;
+  height: 220px;
+
+  @include mq($until: md) {
+    display: none;
+  }
+}
+
+.energy {
+  @include mq($until: md) {
+    padding-top: 0 !important;
+  }
+}
+
+.md-dn {
+  @include mq($until: md) {
+    display: none;
+  }
+}
+

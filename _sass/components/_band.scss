@@ -1,0 +1,62 @@
+/* ==========================================================================
+   BANDS
+   ========================================================================== */
+
+.band {
+  padding-top: $global-spacing-unit * 10;
+  padding-bottom: $global-spacing-unit * 10;
+
+  @include mq($until: md) {
+    padding-top: $global-spacing-unit * 6;
+    padding-bottom: $global-spacing-unit * 6;
+  }
+
+  @include mq($until: md) {
+    text-align: center;
+
+    &.dairy-products {
+      .o-layout__item {
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        margin-left: 0;
+      }
+    }
+
+    &.dairy {
+      .o-layout__item {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.band-top {
+  padding-top: $global-spacing-unit * 10;
+
+  @include mq($until: md) {
+    .o-layout--center>.o-layout__item {
+      text-align: center;
+    }
+  }
+}
+
+.band-small {
+  padding-top: $global-spacing-unit * 3;
+}
+
+
+.band--tint {
+  background: #F5F7F0;
+}
+
+.band--dark {
+  background: #424F19;
+}
+
+.dairy-products {
+  ul {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,12 @@
+/* ==========================================================================
+   CARDS
+   ========================================================================== */
+
+.card {
+  margin-bottom: $global-spacing-unit * 10;
+}
+
+.card__heading {
+  @include font-size(36px);
+  margin-top: $global-spacing-unit * 2;
+}
