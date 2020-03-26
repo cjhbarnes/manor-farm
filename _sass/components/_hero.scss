@@ -87,3 +87,31 @@
   }
 }
 
+.covid-banner {
+  
+  h1 {
+    text-align: center;
+  }
+
+  background: #F5F7F0;
+  padding: 48px;
+  border-radius: 8px;
+  border: 1px solid darken(#F5F7F0,  50%);
+  margin-bottom: 80px;
+
+  .btn {
+    background: $color-brand-primary;
+    padding: 24px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    @include transition(background .5s ease);
+      
+      &:hover {
+        color: #fff !important;
+        background: lighten($color-brand-primary, 15%);
+      }
+
+  }
+}
+
